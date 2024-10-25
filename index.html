@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Jointeur</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background: #7216bd;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 10px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        section {
+            padding: 5px;
+            margin: 20px 0;
+            background: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            margin-top: 0;
+        }
+
+        .about-content {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .jointeur-photo {
+            max-width: 300px; 
+            max-height: 300px;
+            margin-right: 20px;
+            border-radius: 50%;
+            transition: transform 0.3s ease;
+            width: 100%;
+            height: auto;
+        }
+
+        .jointeur-photo:hover {
+            transform: scale(1.1);
+        }
+
+        /* Styles for the responsive grid */
+        .projet-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px;
+        }
+
+        /* Responsive styles for images and videos */
+        .projet-grid img, .projet-grid video {
+            width: 100%; /* Take full width of container */
+            height: auto; /* Maintain aspect ratio */
+            display: block;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            border-radius: 5px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .projet-grid img:hover, .projet-grid video:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background: #7216bd;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Amri Hamdi</h1>
+        <nav>
+            <ul>
+                <li><a href="#accueil">Accueil</a></li>
+                <li><a href="#a-propos">À propos</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#projets">Projets</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="accueil">
+        <h2>Bienvenue</h2>
+        <p>Bienvenue sur mon portfolio de jointeur. Découvrez mon travail et mes compétences.</p>
+    </section>
+
+    <section id="a-propos">
+        <h2>À propos</h2>
+        <div class="about-content">
+            <img src="./hamdi.jpg" alt="Photo de Jointeur" class="jointeur-photo">
+            <p>Fort d'une expertise approfondie en plâtrerie, pose de plaques de plâtre, joints et finitions de peinture pour le secteur du bâtiment, je maîtrise l'art de la préparation des surfaces, de la pose de cloisons et de la réalisation de joints pour des résultats lisses et impeccables. Mon savoir-faire s'étend à la peinture intérieure et extérieure, garantissant une finition soignée et durable. En tant que plaquiste et jointeur professionnel, j'accorde une attention particulière aux détails pour assurer une préparation de qualité des murs et plafonds, et une application de peinture homogène et esthétique. J'interviens sur divers types de projets, du rénovation résidentielle à la construction neuve, avec un souci constant d’efficacité et de satisfaction client.</p>
+        </div>
+    </section>
+
+    <section id="services">
+        <h2>Services</h2>
+        <ul>
+            <li>Pose de cloisons et doublages</li>
+            <li>Enduits et lissage</li>
+            <li>Réparation et rebouchage</li>
+            <li>Travaux d'isolation thermique et acoustique</li>
+            <li>Réalisation de joints</li>
+            <li>Peinture intérieure et extérieure</li>
+            <li>Création de faux plafonds</li>
+            <li>Décoration murale</li>
+        </ul>
+    </section>
+
+    <section id="projets">
+        <h2>Projets</h2>
+        <div class="projet-grid">
+            <!-- Ligne d'images -->
+            <img src="./proj.jpeg" alt="Projet 1 Avant">
+            <img src="./proj2.jpeg" alt="Projet 2">
+            <img src="./proj1.jpeg" alt="Projet 3">
+            <img src="./58880342-12fb-4b50-bc42-c518ac9afbdc.jpeg" alt="Projet 4">
+            <img src="./6b5969b3-e8c2-4cab-915b-a5db5f5d333a.jpeg" alt="Projet 5">
+            <img src="./376ddb15-8192-45b1-a496-818da87eebc9.jpeg" alt="Projet 6">
+            <img src="./167cfcf2-f4a5-4857-9714-e9088187e340.jpeg" alt="Projet 6">
+            
+            <!-- Ligne de vidéos -->
+            <video src="./video1.mp4" controls></video>
+            <video src="./video2.mp4" controls></video>
+            <video src="./z3SHHkppyM8cW7a9qw3Ou.1034.mp4" controls></video>
+            <video src="./1d725a4c-f5a8-4a9b-9a14-ee7fec9a2cd4.mp4" controls></video>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Vous pouvez me contacter à l'adresse email suivante : <a href="mailto:Hamdiamri120@gmail.com">Hamdiamri120@gmail.com</a></p>
+        <p>Ou par téléphone : <a href="tel:+3307 66 76 80 89">+33 07 66 76 80 89</a></p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Amri Hamdi. Tous droits réservés.</p>
+    </footer>
+</body>
+</html>
